@@ -46,11 +46,32 @@ Hệ thống quản lý sân bay giúp theo dõi thông tin khách hàng, chuy�
 - **Mã IATA**: Mã sân bay theo chuẩn quốc tế.
 - **Số đường băng**: Số lượng đường băng phục vụ cất/hạ cánh.
 
+## Controller - Quản lý thông tin
+
+### 1. Tìm kiếm, chỉnh sửa và thêm thông tin khách hàng
+- **Tìm kiếm**: `/api/customers/search?q={query}`
+- **Chỉnh sửa**: `/api/customers/update/{id}`
+- **Thêm mới**: `/api/customers/create`
+
+### 2. Tìm kiếm, chỉnh sửa và thêm thông tin chuyến bay
+- **Tìm kiếm**: `/api/flights/search?q={query}`
+- **Chỉnh sửa**: `/api/flights/update/{id}`
+- **Thêm mới**: `/api/flights/create`
+
+### 3. Tìm kiếm, chỉnh sửa và thêm thông tin vé bay
+- **Tìm kiếm**: `/api/tickets/search?q={query}`
+- **Chỉnh sửa**: `/api/tickets/update/{id}`
+- **Thêm mới**: `/api/tickets/create`
+
+### 4. Tìm kiếm thông tin ghế
+- **Tìm kiếm**: `/api/seats/search?q={query}`
+
 ## Hướng dẫn sử dụng
 1. Thêm thông tin khách hàng.
 2. Quản lý danh sách chuyến bay.
 3. Đặt vé và chỉ định ghế ngồi cho khách hàng.
 4. Cập nhật trạng thái chuyến bay theo thời gian thực.
+5. Tìm kiếm, chỉnh sửa và thêm mới thông tin nhanh chóng qua API.
 
 ---
 
